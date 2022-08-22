@@ -134,6 +134,8 @@ body {
 
 /* Main styles end */
 
+/*  Index pages styles start */
+
 /* Menu styles start */
 
 .menu {
@@ -163,6 +165,23 @@ body {
   line-height: 26px;
   color: #666666;
   text-decoration: none;
+  transition: 0.2s linear;
+}
+.menu__link:hover,
+.menu__link:active,
+.menu__link:focus {
+  color: #42446e;
+  font-weight: 500;
+}
+.menu__link-active {
+  color: #42446e;
+  font-weight: 700;
+}
+.menu__link-active:hover,
+.menu__link-active:active,
+.menu__link-active:focus {
+  color: #42446e;
+  font-weight: 700;
 }
 
 .menu__social-network {
@@ -170,6 +189,13 @@ body {
 }
 .menu__social-network:last-child {
   margin-right: 0px;
+}
+
+.menu__image:hover {
+  transition: 0.2s all;
+}
+.menu__image:hover {
+  opacity: 0.8;
 }
 
 /* Menu styles start */
@@ -261,7 +287,7 @@ body {
   font-size: 48px;
   line-height: 26px;
   color: #42446e;
-  padding-bottom: 49px;
+  margin-bottom: 49px;
 }
 
 .projects__decs {
@@ -287,6 +313,7 @@ body {
 .card__content {
   width: 300px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .card__img {
@@ -306,7 +333,7 @@ body {
   font-weight: 300;
   font-size: 18px;
   line-height: 26px;
-  padding-bottom: 12px;
+  margin-bottom: 12px;
   text-align: left;
 }
 
@@ -314,7 +341,8 @@ body {
   font-size: 16px;
   line-height: 26px;
   color: #42446e;
-  padding-bottom: 21px;
+  margin-bottom: 21px;
+  text-align: left;
 }
 
 .card__skill-span {
@@ -392,6 +420,13 @@ body {
 .contacts_social-network:last-child {
   margin-right: 0px;
 }
+
+.contacts__image:hover {
+  transition: 0.2s all;
+}
+.contacts__image:hover {
+  opacity: 0.8;
+}
 /* Section contacts styles end */
 
 /* Footer styles start */
@@ -439,3 +474,267 @@ body {
 }
 
 /* Footer styles end */
+
+/*  Index pages styles end */
+
+/*  About pages styles start */
+
+.menu {
+  margin-bottom: 120px;
+}
+
+/* Section about styles start */
+
+.container__about {
+  max-width: 710px;
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.about__title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 52px;
+  color: #42446e;
+  margin-bottom: 38px;
+}
+
+.about__desc {
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 38px;
+}
+
+/* Section about styles end */
+
+/* Section work styles start */
+
+.work__title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 52px;
+  color: #42446e;
+  margin-bottom: 38px;
+}
+
+.work__place {
+  position: relative;
+  padding-bottom: 26px;
+  margin-bottom: 56px;
+}
+.work__place::after {
+  display: block;
+  content: "";
+  width: 710px;
+  height: 2px;
+  background-color: #ebeaed;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.list__block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.list__title {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.list__schedule {
+  width: 84px;
+  height: 24px;
+  background: #d7ffe0;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 26px;
+  text-align: center;
+  color: #018c0f;
+}
+
+.list__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.list__adress {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list__company {
+  display: inline-block;
+  padding-left: 20px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 28px;
+  color: #a7a7a7;
+  background: url(../img/svg/about-1.svg) no-repeat left center;
+  margin-right: 22px;
+}
+
+.list__place {
+  display: inline-block;
+  padding-left: 20px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 28px;
+  color: #a7a7a7;
+  background: url(../img/svg/about-2.svg) no-repeat left center;
+}
+
+.list__time {
+  display: inline-block;
+  padding-left: 20px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 28px;
+  color: #a7a7a7;
+  background: url(../img/svg/about-3.svg) no-repeat left center;
+}
+
+/* Section work styles end */
+
+/* Section  education styles start */
+
+.education__title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 52px;
+  color: #42446e;
+  margin-bottom: 38px;
+}
+
+.education__place {
+  position: relative;
+  padding-bottom: 26px;
+  margin-bottom: 56px;
+}
+.education__place::after {
+  display: block;
+  content: "";
+  width: 710px;
+  height: 2px;
+  background-color: #ebeaed;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.page__block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.page__title {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.page__schedule {
+  width: 84px;
+  height: 24px;
+  background: #d7ffe0;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 26px;
+  text-align: center;
+  color: #018c0f;
+}
+
+.page__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.page__company {
+  display: inline-block;
+  padding-left: 20px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 28px;
+  color: #a7a7a7;
+  background: url(../img/svg/about-1.svg) no-repeat left center;
+  margin-right: 22px;
+}
+
+.page__time {
+  display: inline-block;
+  padding-left: 20px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 28px;
+  color: #a7a7a7;
+  background: url(../img/svg/about-3.svg) no-repeat left center;
+}
+
+/* Section  education styles end */
+
+/*  About pages styles end */
+
+/*  Tech stack pages styles start */
+
+.stack__title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 26px;
+  color: #42446e;
+  padding-bottom: 31px;
+}
+
+.stack__desc {
+  font-size: 20px;
+  line-height: 26px;
+  padding-bottom: 204px;
+}
+
+.stack__icons {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 96px;
+  justify-content: center;
+}
+
+/*  Tech stack pages styles end */
+
+/* Project page styles start */
+
+.projects-page {
+  text-align: left;
+}
+
+.projects__title-page {
+  margin-bottom: 32px;
+}
+
+.projects__decs-page {
+  font-size: 20px;
+  margin-bottom: 111px;
+}
+
+/* Project page styles end */
+
+/* Contact page styles start */
+
+.contact {
+  text-align: center;
+}
+
+.contact__title {
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 70px;
+  color: #1e0e62;
+}
+
+/* Contact page styles end */
